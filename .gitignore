@@ -45,3 +45,6 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+brain.txt
+config1.txt
+__pycache__/markov.cpython-36.pyc
