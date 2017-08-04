@@ -16,7 +16,7 @@ def read2(input_text):
             else:
                 markov[(word_array[x - 2], word_array[x - 1])] = [word_array[x]]
 
-def speak2(length):
+def speak2(length, tweet):
     #Pick a random key to start the output
     seed = random.choice(list(markov))
     word1 = seed[0]
@@ -28,7 +28,7 @@ def speak2(length):
             babble += (" " + current)
             if "!" in current or "?" in current:
                 break
-            if len(current) >= 140:
+            if tweet and len(current) >= 130:
                 break
             word1 = word2
             word2 = current
